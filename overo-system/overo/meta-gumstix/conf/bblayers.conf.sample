@@ -1,0 +1,18 @@
+# LAYER_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+LCONF_VERSION = "6"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+BBLAYERS ?= " \
+  /home/overo-system/poky-dizzy/meta \
+  /home/overo-system/poky-dizzy/meta-yocto \
+  /home/overo-system/poky-dizzy/meta-openembedded/meta-oe \
+  /home/overo-system/poky-dizzy/meta-openembedded/meta-networking \
+  /home/overo-system/poky-dizzy/meta-openembedded/meta-python \
+  /home/overo-system/overo/meta-gumstix \
+  "
+BBLAYERS_NON_REMOVABLE ?= " \
+  /home/overo-system/poky-dizzy/meta \
+  /home/overo-system/poky-dizzy/meta-yocto \
+  "
